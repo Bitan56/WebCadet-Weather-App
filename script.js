@@ -78,6 +78,7 @@ async function fetchWeather(area) {
     }
 
 searchBtn.addEventListener('click', ()=>{
+    container.innerHTML = `Loading......`
    const geoLocation = searchInput.value
     fetchWeather(geoLocation)
 })
