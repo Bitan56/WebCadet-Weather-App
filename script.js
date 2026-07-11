@@ -4,7 +4,7 @@ const container = document.querySelector(".container")
 
 async function fetchWeather(area) {
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=a74f28eb3ee84fa7a8d61405261107&q=${area}&aqi=no`)
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=a74f28eb3ee84fa7a8d61405261107&q=${area}&aqi=no`)
 
         if (!response.ok) {
             alert("Location does not Exist in our Database")
