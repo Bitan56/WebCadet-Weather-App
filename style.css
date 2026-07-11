@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /* height: 100vh; */
+    background: url('./assets/sky.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.search-area {
+    width: 340px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 3px 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.search-area input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.search-area #search-btn {
+    position: absolute;
+    right: 0;
+    margin-right: 8px;
+    font-size: 22px;
+    background-color: white;
+    border: none;
+}
+
+.container {
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.top-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 10px;
+}
+
+.top-row .data-container {
+    padding: 5px 20px;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    flex-shrink: 0;
+}
+
+.middle-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.middle-row .data-container {
+    padding: 10px 20px;
+    padding-left: 40px;
+    background-color: white;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    flex-shrink: 0;
+    /* aspect-ratio: 1/1; */
+    width: 300px;
+}
+
+.middle-row .data-container .container-heading {
+    color: gray;
+}
+
+.middle-row .data-container .container-text {
+    display: flex;
+    align-items: start;
+    margin-top: 5px;
+}
+
+.middle-row .data-container .container-text span {
+    font-size: 32px;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
