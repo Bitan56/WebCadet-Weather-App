@@ -8,6 +8,7 @@ async function fetchWeather(area) {
 
         if (!response.ok) {
             alert("Location does not Exist in our Database")
+            container.innerHTML = `Enter a valid location or try entering another nearby location`
         }
 
         const data = await response.json()
@@ -77,8 +78,18 @@ async function fetchWeather(area) {
         }
     }
 
-searchBtn.addEventListener('click', ()=>{
+function fetchReport(){
     container.innerHTML = `Loading......`
    const geoLocation = searchInput.value
     fetchWeather(geoLocation)
+}
+
+searchBtn.addEventListener('click', ()=>{
+    fetchReport()
+})
+
+searchInput.addEventListener('keydown', (event)=>{
+    if(event.key === 'Enter'){
+        fetchReport()
+    }
 })
